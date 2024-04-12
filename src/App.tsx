@@ -1,5 +1,6 @@
 import React, { ChangeEvent } from 'react';
 import './App.css';
+import { Board } from './Components/Board/Board';
 
 function App() {
   const [position, setPosition] = React.useState('');
@@ -26,6 +27,7 @@ function App() {
         <button onClick={submitPosition} type='button' id='SetFen'>
           Set Position
         </button>
+        <Board />
       </div>
     </div>
   );
